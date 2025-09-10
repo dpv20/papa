@@ -1,0 +1,207 @@
+Categoria,Subcategoria,Prefijo,MaxNumero,Count,NextCodigo
+Aislantes e impermeabilizantes,Aislantes,MSA,6986,81,MSA6987
+Aislantes e impermeabilizantes,Impermeabilizantes,MSB,6936,134,MSB6937
+Artefactos sanitarios y ambien,Accesorios de bano,MRB,6274,115,MRB6275
+Artefactos sanitarios y ambien,"Acond.aire,calefactores chimen",MRF,6916,85,MRF6917
+Artefactos sanitarios y ambien,Artefactos de bano,MRA,7014,160,MRA7015
+Artefactos sanitarios y ambien,Artefactos de cocina,MRC,6825,109,MRC6826
+Artefactos sanitarios y ambien,Artefactos de lavanderia o Industriales,MRE,6150,12,MRE6151
+Artefactos sanitarios y ambien,"Cubiertas,partes y piezas post",MRH,6953,13,MRH6954
+Artefactos sanitarios y ambien,Fijaciones sanitarias,MRG,3117,32,MRG3118
+Articulos electricos,Conductores y conectores,MOB,7226,42,MOB7227
+Articulos electricos,Lamparas para cielos colgantes,MOE,6890,7,MOE6891
+Articulos electricos,"Lamparas, apliquet y accesorio",MOD,7023,115,MOD7024
+Articulos electricos,Luminarias de alumbrado public,MOF,1,1,MOF2
+Articulos electricos,Otros,MOH,7227,16,MOH7228
+Articulos electricos,"Tableros, interruptores y ench",MOA,7246,127,MOA7247
+Articulos electricos,Tubos para conductores,MOC,7217,12,MOC7218
+Asfaltos y adhesivos,Asfaltos,MWA,6270,11,MWA6271
+Asfaltos y adhesivos,Combustibles,MWC,5889,7,MWC5890
+Asfaltos y adhesivos,Membranas asfalticas,MWF,6926,9,MWF6927
+Asfaltos y adhesivos,Otros,MWE,6464,7,MWE6465
+Asfaltos y adhesivos,Pegamentos y adhesivos,MWB,6856,141,MWB6857
+Asfaltos y adhesivos,Sellantes,MWD,6792,17,MWD6793
+"Canerias, tuberias",Caneria p/riego por goteo y ac,MPL,5239,3,MPL5240
+"Canerias, tuberias",Canerias de bronce y fittings,MPI,5915,36,MPI5916
+"Canerias, tuberias",Canerias de cobre y fittings,MPC,4897,30,MPC4898
+"Canerias, tuberias",Canerias de fe. fundido,MPE,67,4,MPE68
+"Canerias, tuberias",Canerias de fe. y fittings,MPD,2,2,MPD3
+"Canerias, tuberias",Canerias de pvc y pzas. esp.,MPG,6871,179,MPG6872
+"Canerias, tuberias",Elementos para instalaciones s,MPJ,6422,167,MPJ6423
+"Canerias, tuberias",Tuberia de HDPE,MPB,3,3,MPB4
+"Canerias, tuberias",Tuberia de fibrocemento y pzas,MP,7886,5,MP7887
+"Canerias, tuberias",Tuberia de fibrocemento y pzas,MPM,5026,68,MPM5027
+"Canerias, tuberias",Tuberia de fibrocemento y pzas,MPO,7893,7,MPO7894
+"Canerias, tuberias",Tuberias de cc. y pzas. esp.,MPA,2995,59,MPA2996
+"Canerias, tuberias",Tuberias y fittings hidraulico,MPK,6852,67,MPK6853
+Cubiertas,Accesorios,MIG,7000,68,MIG7001
+Cubiertas,Acero zincalum,MIM,6429,63,MIM6430
+Cubiertas,Asbesto cemento,MIA,6379,78,MIA6380
+Cubiertas,Cubierta fonolita,MIJ,4367,6,MIJ4368
+Cubiertas,Cubiertas de acrilico,MIH,2779,17,MIH2780
+Cubiertas,Cubiertas para terrazas,MIK,6497,2,MIK6498
+Cubiertas,Fibra de vidrio,MIC,4316,20,MIC4317
+Cubiertas,Fibrocemento,MIL,3889,69,MIL3890
+Cubiertas,Fierro galvanizado,MIB,6502,46,MIB6503
+Cubiertas,Tejas de arcilla,MID,6305,9,MID6306
+Cubiertas,Tejas de cemento comp.,MIE,3579,18,MIE3580
+Cubiertas,Tejas de madera,MIF,7004,3,MIF7005
+Griferia,Accesorios,MQE,5100,4,MQE5101
+Griferia,Griferia,MQA,6887,85,MQA6888
+Griferia,Llaverias y valvulas bronce,MQB,6657,20,MQB6658
+Griferia,Piletas,MQD,2567,10,MQD2568
+Griferia,Sifones,MQC,6652,22,MQC6653
+Griferia,Tratamiento de agua,MQF,6518,2,MQF6519
+Herramientas y elem. de seguri,Accesorios,MUE,6666,8,MUE6667
+Herramientas y elem. de seguri,Elementos de seguridad,MUD,6415,79,MUD6416
+Herramientas y elem. de seguri,Herramientas,MUA,6794,94,MUA6795
+Hojalateria,Bajadas,MJB,6273,15,MJB6274
+Hojalateria,Canales,MJA,7548,26,MJA7549
+Hojalateria,Forros,MJC,3587,26,MJC3588
+Hojalateria,Otros,MJD,5886,25,MJD5887
+Hormigones y morteros,Aditivos,MAF,6981,149,MAF6982
+Hormigones y morteros,Aridos,MAE,6482,89,MAE6483
+Hormigones y morteros,Cal y yeso,MAD,3738,15,MAD3739
+Hormigones y morteros,Cementos,MAC,4145,12,MAC4146
+Hormigones y morteros,Desmoldantes,MAI,5977,30,MAI5978
+Hormigones y morteros,Hormigones,MAA,6389,65,MAA6390
+Hormigones y morteros,Materiales para juntas de dila,MAJ,6537,28,MAJ6538
+Hormigones y morteros,Membrana de curado,MAL,6534,32,MAL6535
+Hormigones y morteros,Morteros,MAB,5852,48,MAB5853
+Hormigones y morteros,Otros,MAM,2239,13,MAM2240
+Hormigones y morteros,Postes de hormigon,MAG,7212,10,MAG7213
+Hormigones y morteros,Prefabricados,MAN,7,7,MAN8
+Hormigones y morteros,Resinas epoxicas,MAH,6535,23,MAH6536
+Hormigones y morteros,Separadores de moldaje,MAK,6452,3,MAK6453
+Ladrillos y bloques,Cemento,MBC,7221,36,MBC7222
+Ladrillos y bloques,Ladrillos,MBA,6406,19,MBA6407
+Maderas,Casetas prefabricadas,MCG,6768,5,MCG6769
+Maderas,Maderas elaboradas,MCB,7880,81,MCB7881
+Maderas,Maderas en bruto,MCA,7881,73,MCA7882
+Maderas,Maderas reconstituidas,CCC,5233,1,CCC5234
+Maderas,Maderas reconstituidas,MCC,6924,93,MCC6925
+Maderas,Molduras de maderas,MCH,7034,41,MCH7035
+Maderas,Otros,MCI,6704,20,MCI6705
+Maderas,Postes,MCF,5833,13,MCF5834
+Maderas,Tableros revestidos,MCD,6909,100,MCD6910
+Mano de Obra,Mano de obra especializada,O,7895,122,O7896
+Mano de Obra,Mano de obra general,O,7324,48,O7325
+Maquinarias,Bombas (arriendo),MTQ,2559,24,MTQ2560
+Maquinarias,Bombas (ventas),MTE,6967,20,MTE6968
+Maquinarias,Equip. compactacion (arriendo),MTO,7005,68,MTO7006
+Maquinarias,Equip. compactacion (venta),MTB,3829,11,MTB3830
+Maquinarias,Equipos Topograficos,MTX,2,2,MTX3
+Maquinarias,Equipos de pavimentacion (arri,MTV,6959,46,MTV6960
+Maquinarias,Equipos de pavimentacion (vent,MTN,6163,16,MTN6164
+Maquinarias,Gruas (arriendo),MTJ,6238,17,MTJ6239
+Maquinarias,Hormigones (arriendo),MTS,6987,41,MTS6988
+Maquinarias,Hormigones (venta),MTG,5440,16,MTG5441
+Maquinarias,Moldajes y andamios (arriendo),MTR,7902,37,MTR7903
+Maquinarias,Moldajes y andamios (ventas),MTF,6459,11,MTF6460
+Maquinarias,Movimiento de tierra (arriendo,MTA,6950,67,MTA6951
+Maquinarias,Otros (arriendo),MTL,6746,38,MTL6747
+Maquinarias,Otros (venta),MTM,6954,11,MTM6955
+Maquinarias,Plantas electricas (arriendo),MTU,6956,46,MTU6957
+Maquinarias,Regadores e imprimadores (arri,MTH,6267,4,MTH6268
+Maquinarias,Soldadoras (venta y arriendo),MTT,6234,7,MTT6235
+Maquinarias,Tractores (arriendo),MTW,6242,9,MTW6243
+Maquinarias,Transporte de material (arrien,MTD,6902,12,MTD6903
+Maquinarias,Vibradores (arriendo),MTP,6984,19,MTP6985
+Maquinarias,Vibradores (venta),MTC,6902,26,MTC6903
+Metales,Acero en perfiles,MDD,6757,137,MDD6758
+Metales,Acero redondo con resaltes,MDA,3354,9,MDA3355
+Metales,Acero redondo liso,MDB,3578,9,MDB3579
+Metales,Alambres,MDC,2010,14,MDC2011
+Metales,Aluminio,MDI,6101,122,MDI6102
+Metales,"Clavos, puntas y grapas",MDH,6669,42,MDH6670
+Metales,Fijaciones,MDJ,6411,32,MDJ6412
+Metales,Mallas,MDF,6941,22,MDF6942
+Metales,Mallas dimensionadas de alta r,MDK,5784,9,MDK5785
+Metales,Otros,MDL,7669,38,MDL7670
+Metales,Planchas,MDE,4478,22,MDE4479
+Metales,"Tornillos, pernos, tuercas y r",MDG,6962,157,MDG6963
+Metales,"Tornillos, pernos, tuercas y r",SXD,4,1,SXD5
+"Muros, tabiques y losas",Losas,MEB,5775,14,MEB5776
+"Muros, tabiques y losas",Otros,MED,5393,11,MED5394
+"Muros, tabiques y losas",Paneles,MEA,7223,64,MEA7224
+Obras exteriores,Cierros,MVA,5810,73,MVA5811
+Obras exteriores,Cobertizos,MVF,6500,2,MVF6501
+Obras exteriores,Costos de const.(permisos muni,MVD,1491,4,MVD1492
+Obras exteriores,Jardineria,MVB,5173,66,MVB5174
+Obras exteriores,Otros,MVE,5803,16,MVE5804
+Obras exteriores,Soleras y solerillas,MVC,5823,48,MVC5824
+Pavimentos,Alfombras,MHE,6198,70,MHE6199
+Pavimentos,Baldosas,MHB,5584,85,MHB5585
+Pavimentos,Baldosines ceramicos,MHI,6498,22,MHI6499
+Pavimentos,Ceramicas,MHA,6917,19,MHA6918
+Pavimentos,Gradas,MHL,2848,8,MHL2849
+Pavimentos,Maderas,MHC,6556,60,MHC6557
+Pavimentos,Otros,MH,5800,1,MH5801
+Pavimentos,Otros,MHJ,5809,50,MHJ5810
+Pavimentos,Pastelones y adoquines de cc,MHF,5828,98,MHF5829
+Pavimentos,Pavimentos de hormigon colocad,MHH,6103,1,MHH6104
+Pavimentos,Pisos de corcho alto transito,MHK,1510,4,MHK1511
+Pavimentos,Planchas antideslizantes,MHG,3405,15,MHG3406
+Pavimentos,Plasticos,MHD,6941,36,MHD6942
+"Persianas, cortinas y accesori",Cortinas,MMB,6772,60,MMB6773
+"Persianas, cortinas y accesori",Otros,MMD,2904,6,MMD2905
+"Persianas, cortinas y accesori",Rieles para cortinas,MMC,3688,12,MMC3689
+"Pinturas, barnices y papeles m",Accesorios,MFR,6843,20,MFR6844
+"Pinturas, barnices y papeles m",Anilinas y extractos,MFK,4093,1,MFK4094
+"Pinturas, barnices y papeles m",Anticorrosivos,MFD,6480,44,MFD6481
+"Pinturas, barnices y papeles m",Barnices y aceites,MFE,6541,40,MFE6542
+"Pinturas, barnices y papeles m",Diluyentes,MFI,6721,15,MFI6722
+"Pinturas, barnices y papeles m",Esmaltes,MFA,6549,28,MFA6550
+"Pinturas, barnices y papeles m",Lacas y selladores,MFJ,6344,8,MFJ6345
+"Pinturas, barnices y papeles m",Latex,MFC,6225,51,MFC6226
+"Pinturas, barnices y papeles m",Oleos,MFB,7517,42,MFB7518
+"Pinturas, barnices y papeles m",Otros,MFP,6822,60,MFP6823
+"Pinturas, barnices y papeles m",Papeles murales,MFG,5527,34,MFG5528
+"Pinturas, barnices y papeles m",Pastas,MFH,5137,38,MFH5138
+"Pinturas, barnices y papeles m",Pintura para techos,MFQ,3286,5,MFQ3287
+"Pinturas, barnices y papeles m",Pintura para trafico,MFO,4820,49,MFO4821
+"Pinturas, barnices y papeles m",Pintura resistente al fuego,MFS,3558,4,MFS3559
+"Pinturas, barnices y papeles m",Pinturas para piscinas,MFM,4775,5,MFM4776
+"Pinturas, barnices y papeles m",Revestimientos continuos,MFF,6837,30,MFF6838
+"Pinturas, barnices y papeles m",Tierras,MFL,6725,15,MFL6726
+Puertas y ventanas,Marcos de maderas y metal,MKC,6753,36,MKC6754
+Puertas y ventanas,Otros,MKD,5814,7,MKD5815
+Puertas y ventanas,Puertas,MKA,6957,88,MKA6958
+Puertas y ventanas,Ventanas,MKB,6797,67,MKB6798
+Quincalleria y cerrajeria,Bisagras-quicio,MNB,6061,69,MNB6062
+Quincalleria y cerrajeria,"Cerraduras, picaportes y canda",MNA,18494,149,MNA18495
+Quincalleria y cerrajeria,Quincalleria,MNC,6050,117,MNC6051
+Quincalleria y cerrajeria,Rieles y correderas para close,MND,6039,11,MND6040
+Revestimientos,Cielos,MGB,4054688,48,MGB4054689
+Revestimientos,Cielos colgantes,MGC,6011,21,MGC6012
+Revestimientos,Cielos colgantes,MGV,6015,4,MGV6016
+Revestimientos,Muros,MGA,7534,132,MGA7535
+Revestimientos,Otros,MGD,4225,4,MGD4226
+Subcontratos,Subcontratos de gas,MXC,4,4,MXC5
+Subcontratos,Subcontratos electricos,MXA,42,42,MXA43
+Subcontratos,Subcontratos sanitarios,MXB,50,50,MXB51
+Subcontratos,Subcontratos varios,MXD,135,129,MXD136
+Subcontratos,Subcontratos varios,SXD,169,38,SXD170
+Varios,Actividades usadas como materi,MYM,1223,8,MYM1224
+Varios,Camaras y accesorios,MYA,5416,41,MYA5417
+Varios,Climatización,MYP,3321,11,MYP3322
+Varios,Comunicaciones,MYN,3,3,MYN4
+Varios,Demoliciones y Entibaciones,MYE,2541,4,MYE2542
+Varios,Elementos camineros y señaliz,MYI,5643,15,MYI5644
+Varios,Elementos de perforacion,MYH,3206,3,MYH3207
+Varios,Elementos inst. faenas,MYL,6763,37,MYL6764
+Varios,Estanques de agua,MYB,3352,9,MYB3353
+Varios,Estanques de gas,MYF,3867,2,MYF3868
+Varios,Explosivos,MYD,4567,13,MYD4568
+Varios,Geotextiles,MYK,7204,14,MYK7205
+Varios,Letreros Obra,MYO,2,2,MYO3
+Varios,Otros,MYJ,4609,16,MYJ4610
+Varios,Soldaduras,MYC,7012,23,MYC7013
+Vidrios,Acrilico,MLE,1368,5,MLE1369
+Vidrios,Especiales,MLD,5576,24,MLD5577
+Vidrios,Espejos,MLC,7862,7,MLC7863
+Vidrios,Otros,MLH,5433,5,MLH5434
+Vidrios,Paneles,MLG,2769,1,MLG2770
+Vidrios,Policarbonatos,MLF,7548,30,MLF7549
+Vidrios,Texturados,MLB,5428,10,MLB5429
+Vidrios,Transparentes,MLA,7861,13,MLA7862
