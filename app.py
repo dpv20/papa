@@ -16,13 +16,14 @@ with st.sidebar:
         "Ir a:",
         [
             "🏠 Home",
-            "📦 Presupuesto",
+            "📦 Nuevo Presupuesto",
+            "✏️ Modificar Presupuesto",
             "➕ Agregar ítem",
-            "✏️ Modificar/Eliminar",
             "🗂️ Agregar Categoría"
         ],
         index=0
     )
+
 # --- Rutas / Vistas ---
 def render_home():
     st.title("Bienvenido 👋")
@@ -39,22 +40,22 @@ def render_add_item():
     st.title("➕ Agregar ítem")
     st.info("Funcionalidad en construcción.")
 
-def render_edit_delete_item():
-    st.title("✏️ Modificar / Eliminar ítem")
-    st.info("Funcionalidad en construcción.")
-
 # --- Router simple ---
 if view == "🏠 Home":
     render_home()
-elif view == "📦 Presupuesto":
-    from funciones.presupuesto import render_presupuesto
-    render_presupuesto()
+
+elif view == "📦 Nuevo Presupuesto":
+    from funciones.presupuesto_nuevo import render_presupuesto_nuevo
+    render_presupuesto_nuevo()
+
+elif view == "✏️ Modificar Presupuesto":
+    from funciones.modificar_presupuesto import render_modificar_presupuesto
+    render_modificar_presupuesto()
+
 elif view == "➕ Agregar ítem":
     from funciones.add_item import render_add_item
     render_add_item()
-elif view == "✏️ Modificar/Eliminar":
-    from funciones.modify_item import render_modify_item
-    render_modify_item()
+
 elif view == "🗂️ Agregar Categoría":
     from funciones.agregar_categoria import render_add_category
     render_add_category()

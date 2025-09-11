@@ -1374,7 +1374,6 @@ MDG06957,Material,uni,"T.autop.1/4x1"" zinc c/g",0.0,64.0,0.0,Metales,"Tornillos
 MDG06958,Material,uni,"Tornillo Autop. 1/4x2""",0.0,62.0,0.0,Metales,"Tornillos, pernos, tuercas y r",30/04/2025
 MDG06960,Material,uni,T.autop. 1/4x4 1/2 zinc c/g,0.0,123.0,0.0,Metales,"Tornillos, pernos, tuercas y r",30/04/2025
 MDG06961,Material,uni,"Perno Anclaje 1""",0.0,6380.0,0.0,Metales,"Tornillos, pernos, tuercas y r",30/04/2025
-SXD0004,Partida,kg,Subcontrato Montaje Estructura,1.2,370.0,444.0,Metales,"Tornillos, pernos, tuercas y r",30/04/2025
 MDG06962,Material,uni,Perno Stud 17x90,0.0,990.0,0.0,Metales,"Tornillos, pernos, tuercas y r",30/04/2025
 MDH00157,Material,kg,"Clavo galv.2 1/2"" x 11",0.0,650.0,0.0,Metales,"Clavos, puntas y grapas",30/04/2025
 MDH00199,Material,kg,"Clavo 2""(362 unidades)",0.0,650.0,0.0,Metales,"Clavos, puntas y grapas",30/04/2025
@@ -7633,15 +7632,10 @@ O07892,Mano de obra,HH,Supervisor Estructura,0.0,5184.0,0.0,Mano de Obra,Mano de
 O07893,Mano de obra,HH,Supervisor Obras Civiles,0.0,5184.0,0.0,Mano de Obra,Mano de obra especializada,30/04/2025
 O07894,Mano de obra,HH,Prevencionista de Riesgo,0.0,2268.0,0.0,Mano de Obra,Mano de obra especializada,30/04/2025
 O07895,Mano de obra,HH,Bodeguero,0.0,3270.0,0.0,Mano de Obra,Mano de obra especializada,30/04/2025
-O00298,Mano de obra,dia,Maestro 1° Carpinteria,0.0,28695.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
-O00707,Mano de obra,dia,Jornalero,0.0,15003.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O00719,Mano de obra,dia,Ayud. albañil,0.0,8000.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O00729,Mano de obra,dia,Maestro 2° Carpinteria,0.0,21373.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O00735,Mano de obra,dia,Maestro 1° Mov. Tierra,0.0,8000.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O00741,Mano de obra,dia,Ayud. estucador,0.0,8000.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
-O00771,Mano de obra,dia,Maestro segunda vibradorista,0.0,21373.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
-O00519,Mano de obra,dia,Maestro de segunda,0.0,21373.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
-O00536,Mano de obra,dia,Maestro Mayor Albañil,0.0,32205.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O07037,Mano de obra,dia,Jornal acopio mat.petreo,0.0,8000.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O07038,Mano de obra,dia,Jornal llenado gavion,0.0,8000.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O07055,Mano de obra,dia,Ayud. o. civiles,0.0,8000.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
@@ -7656,28 +7650,19 @@ O07310,Mano de obra,dia,Jornalero carretillero,0.0,8000.0,0.0,Mano de Obra,Mano 
 O07311,Mano de obra,dia,Jornalero canchero,0.0,8000.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O07312,Mano de obra,dia,"Ayud. albañil,platachado",0.0,8000.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O07313,Mano de obra,dia,Jornalero riego,0.0,8000.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
-O00714,Mano de obra,dia,Capataz,0.0,43750.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O07315,Mano de obra,dia,Ayudante cerrajero alum.,0.0,8000.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O07316,Mano de obra,dia,Palero trompo,0.0,8000.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O07317,Mano de obra,dia,Carretillero,0.0,8000.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O07318,Partida,dia,Desgaste de Herramienta,0.0,600.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O07319,Partida,dia,Elementos de Seguridad,0.0,900.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O07320,Mano de obra,dia,Cuadrilla Mov tierra,0.0,19042.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
-O00298,Mano de obra,dia,Maestro 1° Carpinteria,0.295,28695.0,8465.0,Mano de Obra,Mano de obra general,30/04/2025
-O00707,Mano de obra,dia,Jornalero,0.705,15003.0,10577.0,Mano de Obra,Mano de obra general,30/04/2025
 O07321,Mano de obra,dia,Cuadrilla Carpintería,0.0,23260.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
-O00298,Mano de obra,dia,Maestro 1° Carpinteria,0.3,28695.0,8609.0,Mano de Obra,Mano de obra general,30/04/2025
 O00519,Mano de obra,dia,Maestro de segunda,0.2,21373.0,4275.0,Mano de Obra,Mano de obra general,30/04/2025
-O00707,Mano de obra,dia,Jornalero,0.4,15003.0,6001.0,Mano de Obra,Mano de obra general,30/04/2025
 O00714,Mano de obra,dia,Capataz,0.1,43750.0,4375.0,Mano de Obra,Mano de obra general,30/04/2025
 O07322,Mano de obra,dia,Cuadrilla Aseo,0.0,16373.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O00298,Mano de obra,dia,Maestro 1° Carpinteria,0.1,28695.0,2870.0,Mano de Obra,Mano de obra general,30/04/2025
 O00707,Mano de obra,dia,Jornalero,0.9,15003.0,13503.0,Mano de Obra,Mano de obra general,30/04/2025
 O07323,Mano de obra,dia,Cuadrilla Albañilería,0.0,19718.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
-O00536,Mano de obra,dia,Maestro Mayor Albañil,0.2,32205.0,6441.0,Mano de Obra,Mano de obra general,30/04/2025
-O00707,Mano de obra,dia,Jornalero,0.6,15003.0,9002.0,Mano de Obra,Mano de obra general,30/04/2025
-O00771,Mano de obra,dia,Maestro segunda vibradorista,0.2,21373.0,4275.0,Mano de Obra,Mano de obra general,30/04/2025
 O07324,Mano de obra,dia,Cuadrillera Hormigonera,0.0,19718.0,0.0,Mano de Obra,Mano de obra general,30/04/2025
 O00536,Mano de obra,dia,Maestro Mayor Albañil,0.2,32205.0,6441.0,Mano de Obra,Mano de obra general,30/04/2025
-O00707,Mano de obra,dia,Jornalero,0.6,15003.0,9002.0,Mano de Obra,Mano de obra general,30/04/2025
 O00771,Mano de obra,dia,Maestro segunda vibradorista,0.2,21373.0,4275.0,Mano de Obra,Mano de obra general,30/04/2025
