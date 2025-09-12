@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import shutil
+import re  # <-- NUEVO: para normalizar códigos de ítem
 
 from .presupuesto_utils import (
     list_presupuestos, load_presupuesto, save_presupuesto,
@@ -9,7 +10,46 @@ from .presupuesto_utils import (
     catalog_selector_with_qty, today_str, clp, presup_folder
 )
 
-# ----------------- Helpers -----------------
+# ----------------- Helpers de ordenamiento (NUEVO) -----------------
+def _norm_item_code(code: str, width: int = 6) -> str:
+    """
+    Normaliza un código tipo '02.01.10' a un string comparable numéricamente por segmentos:
+    '02.01.10' -> '000002.000001.000010'
+    Si no hay dígitos, retorna el código tal cual.
+    """
+    if code is None:
+        return ""
+    s = str(code)
+    # Extrae todos los grupos de dígitos en orden:
+    parts = re.findall(r"\d+", s)
+    if not parts:
+        return s
+    return ".".join(p.zfill(width) for p in parts)
+
+def _sort_datos_by_item(datos_df: pd.DataFrame) -> pd.DataFrame:
+    """Ordena datos.csv por Item jerárquicamente."""
+    if datos_df is None or datos_df.empty or "Item" not in datos_df.columns:
+        return datos_df
+    df = datos_df.copy()
+    df["__sort"] = df["Item"].astype(str).map(_norm_item_code)
+    df = df.sort_values(["__sort"], kind="mergesort").drop(columns="__sort").reset_index(drop=True)
+    return df
+
+def _sort_detalle_by_item(detalle_df: pd.DataFrame) -> pd.DataFrame:
+    """Ordena detalle.csv por item (jerárquico) y luego por Codigo."""
+    if detalle_df is None or detalle_df.empty or "item" not in detalle_df.columns:
+        return detalle_df
+    df = detalle_df.copy()
+    df["__sort"] = df["item"].astype(str).map(_norm_item_code)
+    # Conserva el orden estable y luego por Codigo
+    df = df.sort_values(["__sort", "Codigo"], kind="mergesort").drop(columns="__sort").reset_index(drop=True)
+    return df
+
+def _sort_both_by_item(datos_df: pd.DataFrame, detalle_df: pd.DataFrame):
+    """Devuelve (datos_sorted, detalle_sorted) con orden jerárquico por ítem."""
+    return _sort_datos_by_item(datos_df), _sort_detalle_by_item(detalle_df)
+
+# ----------------- Helpers existentes -----------------
 def _upsert_item(datos_df: pd.DataFrame, item_code: str, partida: str, fecha: str,
                  cant_tipo: str, cant_num: float, moneda: float) -> pd.DataFrame:
     """Inserta o actualiza una fila en datos.csv para Item=item_code."""
@@ -95,6 +135,7 @@ def _rename_item_and_consolidate(datos_df: pd.DataFrame, detalle_df: pd.DataFram
     - Upsertea la fila del nuevo ítem en datos.csv con los valores indicados.
     - Elimina la fila del old_item si queda duplicada.
     - En detalle.csv cambia 'item' y consolida por ['item','Codigo'] sumando 'cantidad'.
+    - Devuelve ambos dataframes YA ORDENADOS por ítem.
     """
     # 1) datos.csv
     datos_updated = _upsert_item(datos_df, new_item, partida, fecha_str, cant_tipo, cant_num, moneda)
@@ -109,12 +150,14 @@ def _rename_item_and_consolidate(datos_df: pd.DataFrame, detalle_df: pd.DataFram
         det_updated = (det_updated
             .groupby(["item","Codigo"], as_index=False)["cantidad"]
             .sum()
-            .sort_values(["item","Codigo"])
             .reset_index(drop=True))
-    return datos_updated, det_updated
+
+    # 3) ORDENAMIENTO (NUEVO)
+    datos_sorted, det_sorted = _sort_both_by_item(datos_updated, det_updated)
+    return datos_sorted, det_sorted
 
 def _delete_item(datos_df: pd.DataFrame, detalle_df: pd.DataFrame, item_code: str):
-    """Elimina por completo un ítem de datos.csv y detalle.csv."""
+    """Elimina por completo un ítem de datos.csv y detalle.csv. Devuelve ambos ya ordenados."""
     datos_updated = datos_df[datos_df["Item"].astype(str) != str(item_code)].copy()
     detalle_updated = detalle_df[detalle_df["item"].astype(str) != str(item_code)].copy()
     # Consolidación defensiva
@@ -122,9 +165,10 @@ def _delete_item(datos_df: pd.DataFrame, detalle_df: pd.DataFrame, item_code: st
         detalle_updated["cantidad"] = pd.to_numeric(detalle_updated["cantidad"], errors="coerce").fillna(0)
         detalle_updated = (detalle_updated
             .groupby(["item","Codigo"], as_index=False)["cantidad"].sum()
-            .sort_values(["item","Codigo"])
             .reset_index(drop=True))
-    return datos_updated, detalle_updated
+    # ORDENAMIENTO (NUEVO)
+    datos_sorted, det_sorted = _sort_both_by_item(datos_updated, detalle_updated)
+    return datos_sorted, det_sorted
 
 def _delete_project_folder(project_name: str):
     """Borra la carpeta completa del proyecto 'presupuestos/<project_name>'."""
@@ -247,7 +291,7 @@ def render_modificar_presupuesto():
                 st.session_state.pop(DEL_TARGET, None)
                 st.rerun()
 
-            # Borrar del CSV
+            # Borrar del CSV (devuelve ORDENADOS)
             datos_updated, detalle_updated = _delete_item(datos_df, detalle_df, item_to_delete)
             save_presupuesto(nombre_presupuesto, datos_updated, detalle_updated)
 
@@ -342,6 +386,7 @@ def render_modificar_presupuesto():
                     moneda=moneda
                 )
 
+                # (Ya vienen ordenados)
                 save_presupuesto(nombre_sel, datos_df_updated, detalle_updated)
                 datos_df[:] = datos_df_updated
                 detalle_df[:] = detalle_updated
@@ -438,8 +483,9 @@ def render_modificar_presupuesto():
                     detalle_updated["cantidad"] = pd.to_numeric(detalle_updated["cantidad"], errors="coerce").fillna(0)
                     detalle_updated = (detalle_updated
                         .groupby(["item","Codigo"], as_index=False)["cantidad"].sum()
-                        .sort_values(["item","Codigo"])
                         .reset_index(drop=True))
+                    # ORDENAMIENTO (NUEVO) solo detalle; datos_df no cambia acá
+                    detalle_updated = _sort_detalle_by_item(detalle_updated)
 
                 save_presupuesto(nombre_sel, datos_df, detalle_updated)
                 detalle_df[:] = detalle_updated
@@ -554,12 +600,14 @@ def render_modificar_presupuesto():
                     detalle_updated["cantidad"] = pd.to_numeric(detalle_updated["cantidad"], errors="coerce").fillna(0)
                     detalle_updated = (detalle_updated
                         .groupby(["item","Codigo"], as_index=False)["cantidad"].sum()
-                        .sort_values(["item","Codigo"])
                         .reset_index(drop=True))
 
-                save_presupuesto(nombre_sel, datos_df_updated, detalle_updated)
-                datos_df[:] = datos_df_updated
-                detalle_df[:] = detalle_updated
+                # 4) ORDENAMIENTO (NUEVO) en ambos antes de guardar
+                datos_df_sorted, detalle_sorted = _sort_both_by_item(datos_df_updated, detalle_updated)
+
+                save_presupuesto(nombre_sel, datos_df_sorted, detalle_sorted)
+                datos_df[:] = datos_df_sorted
+                detalle_df[:] = detalle_sorted
                 st.success(f"Ítem **{item_new.strip()}** creado/actualizado con su detalle en **{nombre_sel}**.")
         else:
             st.caption("Ajusta cantidades (> 0) y presiona **✅ Aplicar selección** para verlas aquí.")
